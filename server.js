@@ -1,16 +1,14 @@
+// Modern way to define express.
+// import express from 'express'
+// const app1 = express();
 
-// Express 
-const express = require("express");
-const app = express();
+// const PORT = 3000;
 
-app.get("/", (req, res) =>{
-    res.send("Hello Noor!! Express is working.");
-});
-app.listen(3000, ()=>{
-    console.log(" Hello Noor! Server is running or port 3000");
-});
+// // Basic route
+// app1.get("/", (req, res) => {
+//     res.send("Welcome Noor Express server is running!");
+// });
 
-
-// Output
-// To run this code wirte (node server.js) in terminal it will show "Hello Noor! Server is working on port 3000"
-// then open browser on port 3000 it will show "Hello Noor!! Express is working."
+// app1.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });

@@ -2,9 +2,11 @@
   "name": "node.js-express-practice",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/NoorRahman1234/Node.js-Express-Practice/issues"
   },
-  "homepage": "https://github.com/NoorRahman1234/Node.js-Express-Practice#readme"
+  "homepage": "https://github.com/NoorRahman1234/Node.js-Express-Practice#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
 }

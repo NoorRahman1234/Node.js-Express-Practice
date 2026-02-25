@@ -22,18 +22,7 @@ app1.get("/contact", (req, res)=>{
 app1.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-////////////////////////////////////////////////////////////////////
 
-// Basic routing 
-// import express from 'express';
-// const app = express();
-// const PORT = 5000;
-
-// //About page
-// app.get("/about", (req, res)=>{
-//     res.send("This is the about page.");
-// });
-// // Contact page
-// app.get("/contact", (req, res)=>{
-//     res.send('Contact us at contact@example.com.');
-// });
+// Output 
+// first it will run on the server and then it will  run on the browser on port 3000.
+// on 3000 it will show basic route and /about it will show about page and /contact it will show contact page.

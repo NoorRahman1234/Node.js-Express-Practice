@@ -1,8 +1,11 @@
 // Modern way to define express.
-import express from 'express'
+import express from 'express';
+import dbconnection from './Database/db.js';
+import dotenv from "dotenv";
+dotenv.config();
 const app1 = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // // Basic route
 app1.get("/", (req, res) => {
@@ -20,6 +23,7 @@ app1.get("/contact", (req, res)=>{
 
 
 app1.listen(PORT, () => {
+    dbconnection();
     console.log(`Server is running on port ${PORT}`);
 });
 
